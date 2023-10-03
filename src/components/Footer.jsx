@@ -4,7 +4,11 @@ const Footer = () => {
 			<p>
 				Questo portfolio è stato realizzato con React e stilizzato
 				utilizzando Tailwind. Il codice sorgente è disponibile:&nbsp;
-				<a href="#" target="_blank" className="underline">
+				<a
+					href="https://github.com/AFantaccino/portfolio"
+					target="_blank"
+					className="underline"
+				>
 					qui
 				</a>
 			</p>
