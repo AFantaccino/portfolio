@@ -1,38 +1,43 @@
 import Project from "./Project";
 
 const Projects = () => {
+	//aggiungere progetti
 	const projects = [
 		{
-			name: "BlogsApi",
-			link: "https://blogapi-ldpc.onrender.com",
-			code: "https://github.com/AFantaccino/blogApi",
-			img: [
-				{ original: "/blogApi.png" },
-				{ original: "/blogApi2.png" },
-				{ original: "/blogApi3.png" }
-			],
-			descr: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-			techs: ["React", "Redux", "Node.js", "MongoDB", "Material Ui"]
+			name: "1",
+			icon: "icon",
+			description: "descr"
 		},
 		{
-			name: "fakeStore",
-			link: "https://afantaccino.github.io/fakeStore",
-			code: "https://github.com/AFantaccino/fakeStore",
-			img: [
-				{ original: "/fakeStore.png" },
-				{ original: "/fakeStore2.png" }
-			],
-			descr: "Si tratta di un sito di e-commerce che ho creato da zero, con funzionalità di login e signup per una gestione sicura degli utenti. Il sito offre una vasta gamma di prodotti di alta qualità e una navigazione intuitiva, garantendo un'esperienza di shopping online piacevole e senza complicazioni. Ho implementato misure di sicurezza robuste per proteggere i dati dei clienti e incluso offerte speciali per migliorare l'interazione con gli utenti.",
-			techs: ["Angular", "Firebase", "Bootstrap"]
+			name: "2",
+			icon: "icon",
+			description: "descr"
+		},
+		{
+			name: "3",
+			icon: "icon",
+			description: "descr"
 		}
 	];
 
 	return (
-		<div className="p-5 grid lg:grid-cols-2 gap-3">
-			{projects.map((project, id) => (
-				<Project key={id} project={project} />
-			))}
-		</div>
+		<section className="py-20 lg:py-32 flex flex-col gap-24" id="projects">
+			<div className="flex flex-col gap-2 text-center">
+				<h6 className="text-large sm:text-xl md:text-2xl">
+					Alcuni dei miei sforzi creativi.
+				</h6>
+				<h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
+					Curioso di{" "}
+					<span className="poppins text-slate-400">vedere il</span>{" "}
+					mio lavoro?
+				</h3>
+			</div>
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
+				{projects.map((proj, id) => (
+					<Project key={id} project={proj} />
+				))}
+			</div>
+		</section>
 	);
 };
 

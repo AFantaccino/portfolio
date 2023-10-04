@@ -1,36 +1,54 @@
 const About = () => {
-	const about = [
+	//	 Aggiungere sezione con piu informazioni su di me
+
+	const benefits = [
 		{
-			title: "Descrizione Personale",
-			descr: "Mi chiamo Alessandro Fantaccino, ho 27 anni e sono orgogliosamente romano. La mia passione per la programmazione è sbocciata dopo aver completato la scuola superiore, quando ho scoperto il mondo affascinante della creazione di applicazioni e siti web. Fin dall'inizio, ho sentito che questo era il percorso giusto per me, e da allora ho dedicato ogni momento libero a imparare e crescere come sviluppatore web. La mancanza di esperienza lavorativa e di una laurea formale non mi ha mai scoraggiato; al contrario, ho considerato queste sfide come opportunità per dimostrare la mia determinazione e la mia dedizione all'apprendimento costante. La mia passione per la programmazione è cresciuta costantemente e ha alimentato la mia sete di conoscenza nel mondo dello sviluppo web."
+			name: "1",
+			description: ""
 		},
 		{
-			title: "Il mio approccio",
-			descr: "Il mio approccio allo sviluppo web è una combinazione di curiosità insaziabile e creatività nell'affrontare le sfide. Ho compiuto passi significativi nel mio percorso formativo, completando con successo un corso approfondito su Angular. Questa esperienza mi ha fornito una solida base per la creazione di interfacce utente coinvolgenti e interattive. Tuttavia, non mi sono accontentato e ho continuato a cercare opportunità di apprendimento. Attualmente, sto dedicando tempo ed energia allo studio approfondito del stack MERN (MongoDB, Express.js, React e Node.js). Sto apprendendo non solo le basi, ma anche le sfumature di questo stack per diventare un web developer versatile e competente. Credo fermamente che ogni problema possa essere risolto con pazienza, perseveranza e un tocco di ingegno. Sono sempre alla ricerca di nuove sfide che mi consentano di crescere e di acquisire nuove competenze."
+			name: "2",
+			description: ""
 		},
 		{
-			title: "Obiettivo futuro",
-			descr: "Guardando al futuro, il mio obiettivo è raggiungere l'eccellenza come web developer. Voglio diventare un professionista capace di contribuire in modo significativo a progetti innovativi che cambiano il modo in cui interagiamo con il mondo digitale. Per farlo, intendo approfondire le mie competenze tecniche, collaborare con mentori esperti del settore e lavorare su progetti che siano fonte di ispirazione. Allo stesso tempo, non voglio che il mio percorso sia solamente personale; spero di essere in grado di ispirare e guidare altri aspiranti sviluppatori a perseguire le proprie passioni e a superare le sfide che incontreranno nel mondo dello sviluppo web. Mi impegno a condividere le conoscenze e le esperienze che acquisirò lungo il mio cammino."
-		},
-		{
-			title: "La mia passione",
-			descr: "La mia passione per lo sviluppo web è intrinsecamente collegata alla gioia che provo nel creare qualcosa di significativo e funzionale. Non c'è niente di più gratificante per me che vedere un'idea astratta trasformarsi in un'applicazione interattiva che possa migliorare la vita delle persone. Trovo affascinante l'incessante evoluzione del campo dello sviluppo web e la sua capacità di reinventarsi costantemente. Sono affascinato dalle ultime tendenze, dagli standard in continua evoluzione e dalla sempre crescente complessità delle sfide che affrontiamo come sviluppatori."
+			name: "3",
+			description: ""
 		}
 	];
 
 	return (
-		<div className="p-5 grid lg:grid-cols-2 gap-5">
-			{about.map((camp, id) => (
-				<div
-					key={id}
-					className="w-full lg:w-8/12 2xl:w-10/12 px-3 sm:px-6 py-6 m-auto rounded overflow-hidden shadow-lg bg-zinc-900 h-full"
-				>
-					<h2 className="font-bold text-xl my-3">{camp.title}</h2>
-					<br />
-					<p>{camp.descr}</p>
-				</div>
-			))}
-		</div>
+		<section
+			id="about"
+			className="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
+		>
+			<div className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-slate-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-slate-700 py-4">
+				<h6 className="text-large sm:text-xl md:text-2xl">
+					Vuoi conoscere di piu'?
+				</h6>
+				<h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
+					Un po <span className="text-slate-400">su di me</span>.
+				</h3>
+			</div>
+			<p className="mx-auto font-semibold text-lg sm:text-xl md:text-2xl">
+				Io sono . . .
+			</p>
+
+			<div className="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
+				{benefits.map((ben, id) => (
+					<div key={id} className="flex gap-6 sm:gap-8">
+						<p className="text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
+							0{id + 1}
+						</p>
+						<div className="flex flex-col gap-6 sm:gap-8">
+							<h3 className="text-2xl sm:text-3xl md:text-5xl">
+								{ben.name}
+							</h3>
+							<p>{ben.description}</p>
+						</div>
+					</div>
+				))}
+			</div>
+		</section>
 	);
 };
 
