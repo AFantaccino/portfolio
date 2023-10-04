@@ -1,8 +1,6 @@
 import { Link } from "react-scroll";
 
 const Menu = () => {
-	//finito, magari un ultima occhiata
-
 	const tabs = [
 		{
 			name: "Progetti",
@@ -19,8 +17,8 @@ const Menu = () => {
 	];
 
 	return (
-		<header className="sticky z-[10] top-0 duration-200 flex items-center justify-between border-b border-solid p-6 bg-transparent border-transparent">
-			<h1 className="font-medium link">
+		<header className="sticky z-[10] top-0 duration-200 flex items-center justify-center sm:justify-between p-6 bg-transparent">
+			<h1 className="font-medium cursor-pointer">
 				<Link
 					to="home"
 					spy={true}
@@ -29,7 +27,7 @@ const Menu = () => {
 					duration={800}
 					className="duration-200 hover:text-slate-400"
 				>
-					<b className="font-bold poppins">Alessandro </b>
+					<p className="font-bold poppins">Alessandro </p>
 					<span>Fantaccino</span>
 				</Link>
 			</h1>
@@ -42,7 +40,7 @@ const Menu = () => {
 						offset={0}
 						duration={800}
 						key={id}
-						className="duration-200 hover:text-slate-400 link"
+						className="duration-200 hover:text-slate-400 cursor-pointer"
 					>
 						{tab.name}
 					</Link>

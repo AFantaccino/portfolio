@@ -61,12 +61,12 @@ export const options = {
 				offset: 0
 			},
 			enable: true,
-			speed: 2,
+			speed: 0.5,
 			direction: "right"
 		},
 		zIndex: {
 			value: 5,
-			opacityRate: 0.5
+			opacityRate: 10
 		}
 	},
 	interactivity: {

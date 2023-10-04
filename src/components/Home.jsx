@@ -1,5 +1,4 @@
 const Home = () => {
-	//finito?
 	return (
 		<main className="flex flex-col flex-1 p-6 lg:my-44">
 			<section

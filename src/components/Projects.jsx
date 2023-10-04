@@ -6,17 +6,25 @@ const Projects = () => {
 		{
 			name: "1",
 			icon: "icon",
-			description: "descr"
+			description:
+				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium unde quisquam officia sed vitae perspiciatis harum tenetur natus reiciendis culpa.",
+
+			href: "#"
 		},
 		{
 			name: "2",
 			icon: "icon",
-			description: "descr"
+			description:
+				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium unde quisquam officia sed vitae perspiciatis harum tenetur natus reiciendis culpa.",
+
+			href: "#"
 		},
 		{
 			name: "3",
 			icon: "icon",
-			description: "descr"
+			description:
+				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium unde quisquam officia sed vitae perspiciatis harum tenetur natus reiciendis culpa.",
+			href: "#"
 		}
 	];
 
