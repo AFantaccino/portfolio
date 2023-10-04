@@ -33,7 +33,7 @@ const About = () => {
 					Un po <span className="text-slate-400">su di me</span>.
 				</h3>
 			</div>
-			<div className="mx-20 sm:text-lg md:text-xl">
+			<div className="text-center self-center px-6 sm:text-lg sm:w-4/5 md:text-xl lg:w-7/12">
 				<p>{description}</p>
 			</div>
 
@@ -42,13 +42,13 @@ const About = () => {
 					Perche' assumermi?
 				</h3>
 				<h6 className="text-large sm:text-xl md:text-2xl">
-					Contributi chiave che posso offrire
+					Contributi chiave che posso offrire.
 				</h6>
 			</div>
 
 			<div className="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
 				{benefits.map((ben, id) => (
-					<div key={id} className="flex gap-6 sm:gap-8">
+					<div key={id} className="flex gap-6 sm:gap-8 mx-3">
 						<p className="text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
 							0{id + 1}
 						</p>
@@ -56,7 +56,9 @@ const About = () => {
 							<h3 className="text-2xl sm:text-3xl md:text-5xl">
 								{ben.name}
 							</h3>
-							<p>{ben.description}</p>
+							<p className="sm:text-base md:text-lg">
+								{ben.description}
+							</p>
 						</div>
 					</div>
 				))}

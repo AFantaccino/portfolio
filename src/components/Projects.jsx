@@ -1,30 +1,25 @@
 import Project from "./Project";
 
 const Projects = () => {
-	//aggiungere progetti
 	const projects = [
 		{
-			name: "1",
-			icon: "icon",
+			name: "blogsWebsite",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium unde quisquam officia sed vitae perspiciatis harum tenetur natus reiciendis culpa.",
+				"Sito web full-stack realizzato con Node.js ed Express per il backend, e React con Redux per il frontend. Consente agli utenti di condividere i loro siti web preferiti con altri utenti e di lasciare commenti per condividere opinioni e feedback.",
 
-			href: "#"
+			href: "https://github.com/AFantaccino/blogsWebsite"
 		},
 		{
-			name: "2",
-			icon: "icon",
+			name: "AngularStore",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium unde quisquam officia sed vitae perspiciatis harum tenetur natus reiciendis culpa.",
+				"Sito di e-commerce sviluppato con Angular per il frontend e Firebase per il backend. Gli utenti possono navigare tra i prodotti, utilizzando un filtro basato su categorie per trovare facilmente ciò che desiderano.",
 
-			href: "#"
+			href: "https://github.com/AFantaccino/AngularStore"
 		},
 		{
-			name: "3",
-			icon: "icon",
+			name: "Who is that Pokemon?",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium unde quisquam officia sed vitae perspiciatis harum tenetur natus reiciendis culpa.",
-			href: "#"
+				"Gioco di quiz utilizzando la Pokemon API, ancora un lavoro in progresso"
 		}
 	];
 
