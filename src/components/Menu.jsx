@@ -25,7 +25,7 @@ const Menu = () => {
 					smooth={true}
 					offset={-100}
 					duration={800}
-					className="duration-200 hover:text-slate-400"
+					className="duration-200 hover:text-slate-400 flex gap-2"
 				>
 					<p className="font-bold poppins">Alessandro </p>
 					<span>Fantaccino</span>

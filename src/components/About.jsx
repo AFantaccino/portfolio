@@ -41,6 +41,9 @@ const About = () => {
 				<h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
 					Perche' assumermi?
 				</h3>
+				<h6 className="text-large sm:text-xl md:text-2xl">
+					Contributi chiave che posso offrire
+				</h6>
 			</div>
 
 			<div className="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
