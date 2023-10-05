@@ -19,7 +19,8 @@ const Projects = () => {
 		{
 			name: "Cafe Street",
 			description:
-				"Work in Progress - Landing Page di un negozio di caffe basato su una figma che ho trovato online"
+				"Work in Progress - Landing Page di un negozio di caffe basato su una figma che ho trovato online",
+			href: "https://github.com/AFantaccino/CafeStreet"
 		}
 	];
 
