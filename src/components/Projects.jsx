@@ -17,9 +17,9 @@ const Projects = () => {
 			href: "https://github.com/AFantaccino/AngularStore"
 		},
 		{
-			name: "Who is that Pokemon?",
+			name: "Cafe Street",
 			description:
-				"Gioco di quiz utilizzando la Pokemon API, ancora un lavoro in progresso"
+				"Work in Progress - Landing Page di un negozio di caffe basato su una figma che ho trovato online"
 		}
 	];
 
