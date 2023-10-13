@@ -38,11 +38,7 @@ const Footer = () => {
 			</div>
 			<div className="pr-2 flex flex-col text-center gap-2">
 				<p>
-					Il mio portfolio è responsivo. Provalo su diversi
-					dispositivi!
-				</p>
-				<p>
-					Altrimenti vai direttamente al codice sorgente{" "}
+					Codice sorgente del portolio{" "}
 					<a
 						href="https://github.com/AFantaccino/portfolio"
 						target="_blank"
