@@ -38,7 +38,7 @@ const Footer = () => {
 			</div>
 			<div className="pr-2 flex flex-col text-center gap-2">
 				<p>
-					Codice sorgente del portolio{" "}
+					Codice sorgente del portfolio{" "}
 					<a
 						href="https://github.com/AFantaccino/portfolio"
 						target="_blank"
